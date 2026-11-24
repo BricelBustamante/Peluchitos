@@ -1,0 +1,373 @@
+
+/* CONFIGURACIÓN GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #FCF9FF;
+    color: #59486A;
+}
+
+.nosotros {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* PORTADA */
+.portada {
+    min-height: 520px;
+    padding: 70px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background: linear-gradient(120deg, #F1E6FA, #FBF4FF);
+}
+
+.portada-contenido {
+    flex: 1;
+}
+
+.etiqueta {
+    display: inline-block;
+    color: #9270B1;
+    background: #FFFFFF;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.portada h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.2;
+    color: #604B70;
+    margin-bottom: 20px;
+}
+
+.portada h1 span {
+    color: #A982C9;
+    display: block;
+}
+
+.portada p {
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 480px;
+    margin-bottom: 30px;
+    color: #796789;
+}
+
+.boton {
+    display: inline-block;
+    text-decoration: none;
+    background: #A982C9;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background: #80609F;
+    transform: translateY(-3px);
+}
+
+.portada-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.portada-imagen img {
+    width: 100%;
+    max-width: 470px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 48% 48% 25px 25px;
+    box-shadow: 0 12px 30px #9472AE30;
+}
+
+/* HISTORIA */
+.historia {
+    padding: 100px 9%;
+    display: flex;
+    align-items: center;
+    gap: 65px;
+    background: #FFFFFF;
+}
+
+.historia-imagen {
+    flex: 1;
+}
+
+.historia-imagen img {
+    width: 100%;
+    max-width: 470px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.historia-texto {
+    flex: 1.2;
+}
+
+.subtitulo {
+    color: #A982C9;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.historia h2,
+.titulo-seccion h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #604B70;
+    margin: 15px 0 25px;
+}
+
+.historia-texto p {
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 15px;
+    color: #796B83;
+    text-align: justify;
+}
+
+/* TÍTULOS DE SECCIÓN */
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 45px;
+    padding: 0 15px;
+}
+
+.titulo-seccion h2 {
+    margin-bottom: 12px;
+}
+
+.titulo-seccion p {
+    color: #8C7A99;
+    font-size: 15px;
+}
+
+/* MISIÓN Y VISIÓN */
+.proposito {
+    padding: 85px 9%;
+    background: #F5EFFA;
+}
+
+.proposito-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.proposito-card {
+    background: #FFFFFF;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px #9677AF15;
+    transition: 0.3s;
+}
+
+.proposito-card:hover,
+.valor-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px #9677AF30;
+}
+
+.icono {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #F0E4F8;
+    color: #A17BBF;
+    font-size: 30px;
+}
+
+.proposito-card h3,
+.valor-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    color: #8F6CAE;
+    margin-bottom: 18px;
+}
+
+.proposito-card p {
+    color: #796B83;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+/* VALORES */
+.valores {
+    padding: 90px 9%;
+    background: #FFFFFF;
+}
+
+.valores-contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.valor-card {
+    text-align: center;
+    padding: 35px 25px;
+    border: 1px solid #EDE1F5;
+    background: #FCF9FF;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+.valor-icono {
+    font-size: 32px;
+    color: #A982C9;
+    margin-bottom: 18px;
+}
+
+.valor-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.valor-card p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #796B83;
+}
+
+/* ESLOGAN */
+.eslogan {
+    text-align: center;
+    padding: 75px 20px;
+    background: linear-gradient(120deg, #E5D5F2, #F3EAF9);
+}
+
+.eslogan h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    color: #604B70;
+    margin: 15px 0;
+}
+
+.eslogan p {
+    font-size: 20px;
+    color: #8564A2;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.eslogan-decoracion {
+    color: #9875B5;
+    letter-spacing: 5px;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+
+    .portada {
+        padding: 60px 6%;
+        gap: 30px;
+    }
+
+    .historia {
+        padding: 70px 6%;
+        gap: 35px;
+    }
+
+    .valores {
+        padding: 70px 6%;
+    }
+
+    .valores-contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+
+    .portada {
+        flex-direction: column;
+        text-align: center;
+        padding: 55px 7%;
+    }
+
+    .portada p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .portada-imagen img {
+        height: 280px;
+    }
+
+    .historia {
+        flex-direction: column;
+        padding: 65px 7%;
+    }
+
+    .historia-imagen img {
+        height: 300px;
+    }
+
+    .historia h2,
+    .titulo-seccion h2 {
+        font-size: 29px;
+    }
+
+    .proposito {
+        padding: 65px 7%;
+    }
+
+    .proposito-contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .proposito-card {
+        padding: 30px 23px;
+    }
+
+    .valores-contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .eslogan h2 {
+        font-size: 34px;
+    }
+
+    .eslogan p {
+        font-size: 17px;
+    }
+}
+.volver {
+    display: inline-block;
+    margin: 20px;
+    padding: 12px 22px;
+    background: #301934;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.volver:hover {
+    background: #301934;
+    transform: translateY(-3px);
+}
